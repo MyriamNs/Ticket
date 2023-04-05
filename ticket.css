@@ -81,3 +81,10 @@ padding-top: 30px;
     margin-bottom: 15px;
 }
 
+
+.formbox{
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 20px;
+}
+
