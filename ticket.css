@@ -1,0 +1,83 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+</style> 
+
+:root {
+    --spacing: 16px;
+   
+}
+
+body {
+padding: 30px;
+}
+
+h2 {
+font-family: "Raleway", sans-serif;
+font-weight: bold;
+font-size: 36px;
+text-align: center;
+padding-bottom: 50px;
+margin-top: 48px;
+
+}
+
+label{
+    font-family: "Raleway", sans-serif;
+    padding-right: 10px;
+}
+
+input {
+font-family: "Raleway", sans-serif;
+text-align: center;
+width: 180px;
+height: 40px;
+border: 1px solid #ccc;
+background-color: azure;
+border-radius: 5px;
+}
+
+p{
+font-family: "Raleway", sans-serif;
+}
+
+.todaybox{
+border: 1px solid;
+border-radius: 6px;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+padding-right: 65px;
+padding-left: 2px;
+margin: 2px;
+
+}
+
+.row{
+display: flex;
+flex-direction: row;
+padding-bottom: 36px;
+padding-top: 20px;
+margin-top: 50px;
+}
+
+.daybox{
+border: 1px solid;
+border-radius: 6px;
+width:75px;
+height: 75px;
+margin-left: 5px;
+text-align: center;
+}
+
+.dayrow{
+display: flex;
+flex-direction: row;
+padding-top: 30px;
+}
+
+.spacelabel{
+    margin-bottom: 15px;
+}
+
