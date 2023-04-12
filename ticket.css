@@ -1,6 +1,6 @@
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
-</style> 
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+ 
 
 :root {
     --spacing: 16px;
@@ -9,6 +9,8 @@
 
 body {
 padding: 30px;
+background-color: black;
+
 }
 
 h2 {
@@ -18,22 +20,29 @@ font-size: 36px;
 text-align: center;
 padding-bottom: 50px;
 margin-top: 48px;
+color: white;
 
 }
 
 label{
     font-family: "Raleway", sans-serif;
     padding-right: 10px;
+    display: block;
+    margin-bottom: 20px;
+    color: white;
 }
 
 input {
 font-family: "Raleway", sans-serif;
-text-align: center;
+text-align: left;
+padding-left: 5px;
 width: 180px;
 height: 40px;
 border: 1px solid #ccc;
-background-color: azure;
+background-color: rgb(247, 193, 159);
 border-radius: 5px;
+display: block;
+margin-bottom: 20px;
 }
 
 p{
@@ -86,5 +95,125 @@ padding-top: 30px;
     border: 1px solid;
     border-radius: 6px;
     padding: 20px;
+    padding-left: 64px;
 }
 
+.buttonalign{
+display: flex;
+flex-direction: row;
+margin-top: 15px;
+margin-left: 132px;
+
+}
+
+
+.button{
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+button {
+background-color: rgb(223, 149, 103);
+display: initial;
+margin-right: 10px;
+border: 1px solid;
+padding: 16px;
+border-radius: 6px;
+color: white
+}
+
+#inputsubmission p{
+color: white;
+
+    font-family: "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.city{
+    /* color: red !important; */
+    font-family: "Arial black", sans-serif !important;
+    font-size: 40px !important;
+    margin-left: -15px !important;
+}
+
+.date{
+    /* color: red !important; */
+    font-family: "Arial black", sans-serif !important;
+    font-size: 20px !important;
+}
+
+.start{
+    /* color: orchid !important; */
+    font-family: "Arial black", sans-serif !important;
+    font-size: 20px !important;
+}
+
+.end{
+    /* color: orchid !important; */
+    font-family: "Arial black", sans-serif !important;
+    font-size: 20px !important;
+}
+
+
+.inputbox{
+
+        border: 1px solid white;
+        border-radius: 6px;
+        padding: 20px;
+        padding-left: 64px;
+        margin-top: 30px;
+        width: 302px;
+        height: 629px;
+        background-image: url('lastblur.jpg');
+        background-size: cover;
+       
+    }
+
+   
+   details{
+        border: 1px solid;
+        border-radius: 6px;
+        margin-left: -38px;
+        color: white;
+
+    }
+
+    summary{
+   
+        text-align: center;
+        padding: 75px;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+    }
+
+   
+
+      details[open] summary {
+        border: none;
+      }
+
+
+      details[open] {
+        border: none;
+      }
+
+      .circle{
+        width: 178px;
+        height: 178px;
+        border-radius: 50%;
+        background-image: url('camille.jpg');
+        background-size: cover;
+        background-position: center;
+
+      }
+
+      .some-text{
+        color: black;
+      }
+
+     

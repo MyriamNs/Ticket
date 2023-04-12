@@ -7,160 +7,146 @@
         <link href="reset.css" rel="stylesheet">
         <link href="ticket.css" rel="stylesheet">
         <script defer src="form-statet.js"></script>
+        <script defer src="main.js"></script>
+        
+        
     </head>
 
    <body>
+  
+
     <section>
-    <h2> Weather </h2>
-    <form>
-        <section>
-            <label for="some-text">City </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
 
+        <h2> Create Your Ticket </h2>
+        <form>
+        <section class="formbox">
+            <details>
+                <summary> Title </summary>
+            <section class="spacelabel">
+                <label for="some-text">City </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Date </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="date">
+    
+            </section>
+            
+    
+            <section class="spacelabel">
+                <label for="some-text">Start </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="time">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">End </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="time">
+    
+            </section>
+        </details>
+    
+        <details>
+            <summary> Destinations </summary>
+            <section class="spacelabel">
+                <label for="some-text">Destination 1 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Distance 1 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Destination 2 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Distance 2 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Destination 3 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Distance 3 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Destination 4 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Distance 4 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Destination 5 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+    
+            <section class="spacelabel">
+                <label for="some-text">Distance 5 </label>
+                <input class="some-text" name="some-text" placeholder="Some suggested text" required type="text">
+    
+            </section>
+        </details>
+    
         </section>
-    </form>
-
-    <section class="todaybox row">
-    <div class="container">
-    <p> City </p>
-    <p> Cloudy </p>
+    
+        </form>
+    
+        <div class="buttonalign">
+    <button type="reset">Reset</button>
+    <button type="submit" onclick="handleSubmit(event)">Submit</button>
     </div>
-
-    <div class="container">
-    <p> Today </p>
-    <p> 14C</p>
+    
+    <section>
+    <div class="inputbox">
+        <div class="circle"></div>
+    <div id="inputsubmission"></div>
+    
+    
+    
+    
+    
+    
     </div>
-
-    <div class="container">
-     <p> H:16C  L:12C</p>   
-    </div>
-
-   </section>
-
-   <section class="dayrow">
-   <div class="daybox">
-    <p>13C</p>
-   </div>
-   <div class="daybox">
-    <p>11C</p>
-   </div>
-   <div class="daybox">
-    <p>14C</p>
-   </div>
-   <div class="daybox">
-    <p>12C</p>
-   </div>
-   </section>
-
- </section>
-
- <section>
-
-    <h2> Create Your Ticket </h2>
-    <form>
-    <section class="formbox">
-        <section class="spacelabel">
-            <label for="some-text">City </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Date </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Start </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">End </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Destination 1 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Distance 1 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Destination 2 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Distance 2 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Destination 3 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Distance 3 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Destination 4 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Distance 4 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Destination 5 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
-        <section class="spacelabel">
-            <label for="some-text">Distance 5 </label>
-            <input id="some-text" name="some-text" placeholder="Some suggested text" required type="text">
-
-        </section>
-
+    
     </section>
-
-    </form>
-
-
-
-
-
- </section>
-
-
-
-
-
-
-
-
-
-   </body>
-
-   </html>
+    
+    
+    
+    
+     </section>
+    
+    
+    
+    
+    
+    
+    
+     
+    
+       </body>
+      
+       </html>
