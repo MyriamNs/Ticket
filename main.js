@@ -21,7 +21,15 @@ function displayInput() {
 		if(i==3){text.classList.add('end')}
 		document.querySelector('#inputsubmission').append(text)
 	});
+	
  }
+ function newstyle() {
+	
+	console.log('Hello')
+	stylet=document.querySelector('.city')
+	stylet.setAttribute("textDecoration","underline");
+	console.log(stylet);
+ };
  // Function to match the form to URL/stored params
 const updateForm = (params) => {
 	params = new URLSearchParams(params); // Parse into params

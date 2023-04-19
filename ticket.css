@@ -129,6 +129,7 @@ color: white;
     font-family: "Arial", sans-serif;
     font-weight: bold;
     font-size: 14px;
+    
 
 }
 
@@ -136,32 +137,51 @@ color: white;
     /* color: red !important; */
     font-family: "Arial black", sans-serif !important;
     font-size: 40px !important;
-    margin-left: -15px !important;
+    /* margin-left: -15px !important; */
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 109%;
+    margin-left: -34px;
+    padding-top: 10px;
+    text-align: center;
+   
 }
 
 .date{
     /* color: red !important; */
     font-family: "Arial black", sans-serif !important;
     font-size: 20px !important;
+    width: 109%;
+    margin-left: -34px;
+    padding-top: 10px;
 }
 
 .start{
     /* color: orchid !important; */
     font-family: "Arial black", sans-serif !important;
     font-size: 20px !important;
+    border-top: 1px solid white;
+    width: 109%;
+    margin-left: -34px;
+    padding-top: 10px;
 }
 
 .end{
     /* color: orchid !important; */
     font-family: "Arial black", sans-serif !important;
     font-size: 20px !important;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 109%;
+    margin-left: -34px;
+    padding-top: 10px;
 }
 
 
 .inputbox{
 
         border: 1px solid white;
-        border-radius: 6px;
+        border-radius: 40px;
         padding: 20px;
         padding-left: 64px;
         margin-top: 30px;
@@ -169,8 +189,9 @@ color: white;
         height: 629px;
         background-image: url('lastblur.jpg');
         background-size: cover;
-       
     }
+
+
 
    
    details{
@@ -202,7 +223,7 @@ color: white;
         border: none;
       }
 
-      .circle{
+      /* .circle{
         width: 178px;
         height: 178px;
         border-radius: 50%;
@@ -210,10 +231,66 @@ color: white;
         background-size: cover;
         background-position: center;
 
+      } */
+
+      .circle{
+        width: 178px;
+        height: 178px;
+        border-radius: 50%;
+        background-color: rgb(223, 149, 103);
+        margin-bottom: 24px;
+        background-image: url('camille.jpg');
+        background-size: cover;
       }
 
       .some-text{
         color: black;
       }
+
+     @media print{
+    body {
+        visibility: hidden;
+        /* display: none; */
+    }  
+
+    #printable, .inputbox {
+    display: block;
+    }
+
+    #printable {
+    visibility: visible;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    }
+
+    .inputbox {
+        background-image: url('lastblur.jpg');
+        background-size: cover; 
+        
+        
+      }
+
+    /* .inputbox:before {
+    
+    content: url('lastblur.jpg');
+    zoom: 25%;
+    }  */
+
+   
+
+    /* .inputbox-over-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        /* adjust these values to position the input correctly */
+         */
+
+    /* #inputsubmission:before {
+    zoom: 25%;
+    } */
+   
+     }
 
      
