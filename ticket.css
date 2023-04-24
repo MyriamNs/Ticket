@@ -92,7 +92,7 @@ padding-top: 30px;
 
 
 .formbox{
-    border: 1px solid;
+    border: 1px solid white;
     border-radius: 6px;
     padding: 20px;
     padding-left: 64px;
@@ -106,6 +106,16 @@ margin-left: 132px;
 
 }
 
+.buttonalign2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-left: 2px;
+    
+    }
+
 
 .button{
     border: 1px solid;
@@ -117,10 +127,15 @@ button {
 background-color: rgb(223, 149, 103);
 display: initial;
 margin-right: 10px;
+margin-bottom: 20px;
+margin-top: 10px;
 border: 1px solid;
 padding: 16px;
 border-radius: 6px;
-color: white
+color: white;
+width: 80px;
+height: 60px;
+text-align: center;
 }
 
 #inputsubmission p{
@@ -189,6 +204,9 @@ color: white;
         height: 629px;
         background-image: url('lastblur.jpg');
         background-size: cover;
+        /* filter: hue-rotate(80deg); */
+        /* filter: sepia(100%); */
+        /* filter: hue-rotate(180deg);  */
     }
 
 
@@ -241,6 +259,8 @@ color: white;
         margin-bottom: 24px;
         background-image: url('camille.jpg');
         background-size: cover;
+        
+       
       }
 
       .some-text{
@@ -294,3 +314,23 @@ color: white;
      }
 
      
+     form {
+     background-image: url('mirrorflower.JPG');
+     background-size: cover;
+     background-repeat: no-repeat;
+     /* display: none; */
+     }
+
+     #landingimage{
+       margin-top: 20%; 
+       margin-bottom: 15%;
+       cursor: pointer;
+       animation: bounce 2s infinite;
+       animation-delay: 3s;
+     }
+      @keyframes bounce {
+            0% {transform: translateY(0px); }
+            50% {transform: translateY(10px); }
+            100% {transform: translateY(0px); }
+      }
+   
