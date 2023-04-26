@@ -13,6 +13,15 @@ background-color: black;
 
 }
 
+/* @media (min-width:768px){
+  body{
+    padding: 64px;
+
+  }
+  
+} */
+
+
 h2 {
 font-family: "Raleway", sans-serif;
 font-weight: bold;
@@ -36,13 +45,19 @@ input {
 font-family: "Raleway", sans-serif;
 text-align: left;
 padding-left: 5px;
-width: 180px;
+width: 247px;
 height: 40px;
 border: 1px solid #ccc;
 background-color: rgb(247, 193, 159);
 border-radius: 5px;
 display: block;
 margin-bottom: 20px;
+}
+
+@media (min-width:768px){
+  input{
+    width: 390px;
+  }
 }
 
 p{
@@ -102,8 +117,15 @@ padding-top: 30px;
 display: flex;
 flex-direction: row;
 margin-top: 15px;
-margin-left: 132px;
+margin-left: 2px;
 
+}
+
+@media (min-width:1024px){
+  .buttonalign{
+    flex-direction: column;
+    margin-left: 69px;
+  }
 }
 
 .buttonalign2{
@@ -114,6 +136,33 @@ margin-left: 132px;
     margin-top: 15px;
     margin-left: 2px;
     
+    }
+
+    @media (min-width:768px){
+      .buttonalign2{
+        margin-right: 207px; 
+       
+      }
+    }
+
+    @media (min-width:1024px){
+      .buttonalign2{
+        margin-right: 410px; 
+        flex-direction: column;
+        margin-left: 72px;
+      }
+    }
+
+    @media (min-width:1440px){
+      .buttonalign2{
+        margin-right: 850px; 
+      }
+    }
+
+    @media (min-width:2560px){
+      .buttonalign2{
+        margin-right: 2000px; 
+      }
     }
 
 
@@ -143,7 +192,7 @@ color: white;
 
     font-family: "Arial", sans-serif;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 15px;
     
 
 }
@@ -190,6 +239,7 @@ color: white;
     width: 109%;
     margin-left: -34px;
     padding-top: 10px;
+    margin-bottom: 31px;
 }
 
 
@@ -204,11 +254,8 @@ color: white;
         height: 629px;
         background-image: url('lastblur.jpg');
         background-size: cover;
-        /* filter: hue-rotate(80deg); */
-        /* filter: sepia(100%); */
-        /* filter: hue-rotate(180deg);  */
-    }
 
+    }
 
 
    
@@ -228,6 +275,12 @@ color: white;
         font-weight: bold;
         font-size: 20px;
         color: white;
+    }
+
+    @media (min-width:1024px){
+      summary{
+        font-size: 32px;
+      }
     }
 
    
@@ -259,6 +312,7 @@ color: white;
         margin-bottom: 24px;
         background-image: url('camille.jpg');
         background-size: cover;
+        text-align: center;
         
        
       }
@@ -266,6 +320,10 @@ color: white;
       .some-text{
         color: black;
       }
+
+
+
+
 
      @media print{
     body {
@@ -275,43 +333,47 @@ color: white;
 
     #printable, .inputbox {
     display: block;
+   
+    
     }
 
     #printable {
     visibility: visible;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 22%;
+    top: 3%;
+    /* margin: 0;
+    padding: 0; */
+    /* height: 120%; */
+    width: 55%;
+    margin-top: -700px;
+    /* top: 50%;
+    right: 50%; */
+    font-size: 32px !important;
+  
 
+    }
+
+    .circle{
+      height: 230px;
+      width: 230px;
+      left: 50%;
     }
 
     .inputbox {
         background-image: url('lastblur.jpg');
-        background-size: cover; 
-        
-        
+        background-size: cover;  
+        height: 700px !important;
+        /* height: 120px; */
       }
 
-    /* .inputbox:before {
-    
-    content: url('lastblur.jpg');
-    zoom: 25%;
-    }  */
-
-   
-
-    /* .inputbox-over-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* adjust these values to position the input correctly */
-         */
-
-    /* #inputsubmission:before {
-    zoom: 25%;
-    } */
-   
+     /* .desktopticket{
+      display: none;
+     } */
      }
+
+
+
 
      
      form {
@@ -321,16 +383,125 @@ color: white;
      /* display: none; */
      }
 
+     @media (min-width:768px){
+      form{
+        width: 80%;
+        height: 20%;
+      }
+     }
+
+     @media (min-width:1024px){
+      form{
+      height: 64%;
+      width:452px;
+
+      }
+     }
+
      #landingimage{
-       margin-top: 20%; 
+       margin-top: 13%; 
        margin-bottom: 15%;
+       width: 70%;
+       margin-left:15%;
+       height: auto;
        cursor: pointer;
        animation: bounce 2s infinite;
-       animation-delay: 3s;
+       animation-delay: 2s;
      }
       @keyframes bounce {
             0% {transform: translateY(0px); }
-            50% {transform: translateY(10px); }
+            50% {transform: translateY(20px); }
             100% {transform: translateY(0px); }
       }
    
+      @media (min-width:768px){
+        #landingimage{
+          margin-top: 10%; 
+          margin-bottom: 10%;
+          width: 37%;
+          margin-left:32%;
+          height: auto;
+        }
+      }
+
+      @media (min-width:1024px){
+        #landingimage{
+          margin-top: 3%; 
+          width: 25%;
+          margin-left:370px;
+          height: auto;
+        }
+      }
+
+      @media (min-width:1440px){
+        #landingimage{
+          margin-left:525px;
+        }
+      }
+
+      @media (min-width:2560px){
+        #landingimage{
+          margin-left:950px;
+        }
+      }
+
+
+
+      #ticketform{
+        position: absolute;
+        display: none;
+      }
+
+      .formandticket{
+        margin-left: 0px;
+        flex-direction: column;
+      }
+
+      @media (min-width:425px){
+        .formandticket{
+          margin-left: 26px;
+        }
+      }
+
+      @media (min-width:768px){
+        .formandticket{
+          margin-left: 120px;
+        }
+      }
+
+      @media (min-width:1024px){
+        .formandticket{
+          display: flex;
+          flex-direction: row;
+          margin-left: 45px;
+        }
+      }
+
+      @media (min-width:1440px){
+        .formandticket{
+          margin-left: 264px;
+        }
+      }
+
+      @media (min-width:2560px){
+        .formandticket{
+          margin-left: 810px;
+        }
+      }
+
+      .positioncenter{
+        display: flex;
+      }
+
+      @media (min-width:1024px){
+        .positioncenter{
+          margin-right: -57px;
+          margin-left: -39px;
+        }
+      }
+
+      @media (min-width:1024px){
+      .desktopticket{
+      margin-left: 88px;
+      }
+    }

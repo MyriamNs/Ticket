@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ticket Travel</title>
+        <title>Journey Ticket</title>
+        <link href="favicon.ico" rel="icon" sizes="any">
         <meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="reset.css" rel="stylesheet">
@@ -18,7 +19,9 @@
     <section>
 
         <h2> Create Your Ticket </h2>
-        <img id="landingimage" src="typewriter typointer.svg">
+        <img id="landingimage" src="typewriterfinal.png" onclick="reveal()">
+        <div class="formandticket" id="ticketform">
+            <div class="positioncenter">
         <form id="form">
         <section class="formbox">
             <details>
@@ -115,14 +118,17 @@
         </section>
     
         </form>
+    </div>
     
         <div class="buttonalign">
     <button type="reset">Reset</button>
     <button type="submit" onclick="handleSubmit(event)">Submit</button>
     </div>
+
+    <div class="positioncenter">
     
-    <section>
-    <div class="inputbox inputbox-over-image" id="printable" >
+    <section class="desktopticket">
+    <div class="inputbox" id="printable" >
         <div class="circle"></div>
     <div id="inputsubmission"></div>
     
@@ -134,20 +140,31 @@
     </div>
     
     </section>
+</div>
   
     <section class="buttonalign2">
     <button onclick="window.print()">Print</button> 
-    <!-- <button onclick="newstyle()"> Style </button> -->
-    <button onclick="sepia()"> Sepia </button>
-    <button onclick="green()"> Green </button>
-    <button onclick="blue()"> Blue </button>
-    <button onclick="purple()"> Purple </button>
-    <button onclick="pink()"> Pink </button>
+
+   <div id="buttonfilter"></div>
+    <!-- <button id="button1"> Original </button> -->
+    <button id="button1" onclick="filter1()"> Original</button>
+    <button id="button2" onclick="filter2()"> Sepia </button>
+    <button id="button3" onclick="filter3()"> Green </button>
+    <button id="button4" onclick="filter4()"> Blue </button>
+    <button id="button5" onclick="filter5()"> Purple </button>
+    <button id="button6" onclick="filter6()"> Pink </button>
+    <!-- <button id="button3" data-filter="filter3"> Green </button>
+    <button id="button4" data-filter="filter4"> Blue </button>
+    <button id="button5" data-filter="filter5"> Purple </button>
+    <button id="button6" data-filter="filter6"> Pink </button>
+     -->
+
+
 
 </section>
     
     
-    
+</div>
     
      </section>
     

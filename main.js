@@ -23,16 +23,87 @@ function displayInput() {
 	});
 	
  }
- function newstyle() {
-	
-	console.log('Hello')
-	stylet=document.querySelector('.city')
-	stylet.setAttribute("textDecoration","underline");
-	console.log(stylet);
- };
+
  // Function to match the form to URL/stored params
 const updateForm = (params) => {
 	params = new URLSearchParams(params); // Parse into params
 };
+
+// const buttons = document.querySelectorAll('#buttonfilter button');
+const button1 = document.getElementById('button1');
+const button2 = document.getElementById('button2');
+const button3 = document.getElementById('button3');
+const button4 = document.getElementById('button4');
+const button5 = document.getElementById('button5');
+const button6 = document.getElementById('button6');
+function filter1(){
+	const ticketFilter = document.getElementById('printable');
+	ticketFilter.style.filter = 'none';
+
+	}
+function filter2(){
+	const ticketFilter = document.getElementById('printable');
+	ticketFilter.style.filter = 'sepia(100%)';
+
+	}
+	function filter3(){
+		const ticketFilter = document.getElementById('printable');
+		ticketFilter.style.filter = 'hue-rotate(90deg)';
+	
+		}
+		function filter4(){
+			const ticketFilter = document.getElementById('printable');
+			ticketFilter.style.filter = 'hue-rotate(180deg)';
+		
+			}
+			function filter5(){
+				const ticketFilter = document.getElementById('printable');
+				ticketFilter.style.filter = 'hue-rotate(260deg)';
+			
+				}
+				function filter6(){
+					const ticketFilter = document.getElementById('printable');
+					ticketFilter.style.filter = 'hue-rotate(310deg)';
+				
+					}
+
+// function reveal(){
+// const fImage = document.getElementById('#landingimage');
+// const formTicket = document.getElementById('#ticketform');
+
+// if (formTicket.style.display === "none") {
+//  formTicket.style.display = 'block';
+// } else {
+// 	formTicket.style.display = 'none';
+// }
+// }
+// const fImage = document.getElementById('landingimage');
+// fImage.addEventListener('click', reveal);
+
+
+// const firstImage = document.querySelector('#landingimage');
+// const formReveal = document.querySelector('#ticketform');
+
+// firstImage.addEventListener('click',() => {
+// 	if (formReveal.style.display === 'none') {
+// 		formReveal.style.display = 'contents';
+// 	} else {
+//       formReveal.style.display = 'none';
+// 	}
+// });
+
+function reveal() {
+	const firstImage = document.querySelector('#landingimage');
+	const formReveal = document.querySelector('#ticketform');
+  
+	firstImage.addEventListener('click', () => {
+	  console.log('Image clicked!');
+	  formReveal.style.display = 'flex';
+	});
+  }
+  
+  reveal();
+
+
 
 
