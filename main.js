@@ -67,30 +67,7 @@ function filter2(){
 				
 					}
 
-// function reveal(){
-// const fImage = document.getElementById('#landingimage');
-// const formTicket = document.getElementById('#ticketform');
 
-// if (formTicket.style.display === "none") {
-//  formTicket.style.display = 'block';
-// } else {
-// 	formTicket.style.display = 'none';
-// }
-// }
-// const fImage = document.getElementById('landingimage');
-// fImage.addEventListener('click', reveal);
-
-
-// const firstImage = document.querySelector('#landingimage');
-// const formReveal = document.querySelector('#ticketform');
-
-// firstImage.addEventListener('click',() => {
-// 	if (formReveal.style.display === 'none') {
-// 		formReveal.style.display = 'contents';
-// 	} else {
-//       formReveal.style.display = 'none';
-// 	}
-// });
 
 function reveal() {
 	const firstImage = document.querySelector('#landingimage');
